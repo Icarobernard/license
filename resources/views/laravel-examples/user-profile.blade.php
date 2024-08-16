@@ -70,7 +70,7 @@
                         <span class="alert-text text-white">
                             {{$errors->first()}}</span>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            <i class="fa fa-close" aria-hidden="true"></i>
+                            X
                         </button>
                     </div>
                     @endif
@@ -79,7 +79,7 @@
                         <span class="alert-text text-white">
                             {{ session('success') }}</span>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            <i class="fa fa-close" aria-hidden="true"></i>
+                            X
                         </button>
                     </div>
                     @endif

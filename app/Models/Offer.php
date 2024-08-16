@@ -14,6 +14,17 @@ class Offer extends Model
         'name',
         'type',
         'licenses',
+        'subscription_type',
+        'subscription_quantity',
+        'is_visible',
+        'utm_source',
+        'utm_campaign',
+        'utm_medium',
+        'utm_term',
+        'utm_content',
+        'url',
+        'price',
+        'image'
     ];
 
     public function product()

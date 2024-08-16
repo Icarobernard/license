@@ -74,7 +74,7 @@
                   @enderror
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" placeholder="Email" name="email" id="email" aria-label="Email" aria-describedby="email-addon" value="{{ old('email') }}">
+                  <input type="email" class="form-control" placeholder="Email (Use o mesmo email da compra)" name="email" id="email" aria-label="Email" aria-describedby="email-addon" value="{{ old('email') }}">
                   @error('email')
                     <p class="text-danger text-xs mt-2">{{ $message }}</p>
                   @enderror
@@ -86,13 +86,13 @@
                   @enderror
                 </div>
                 <div class="form-check form-check-info text-left">
-                  <input class="form-check-input" type="hidden" name="agreement" id="flexCheckDefault" checked>
-                  <!-- <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="agreement" id="flexCheckDefault" checked>
+                   <label class="form-check-label" for="flexCheckDefault">
                     Concordar <a href="javascript:;" class="text-dark font-weight-bolder">com termos e condições</a>
-                  </label> -->
-                  <!-- @error('agreement')
-                    <p class="text-danger text-xs mt-2">First, agree to the Terms and Conditions, then try register again.</p>
-                  @enderror -->
+                  </label>
+                   @error('agreement')
+                    <p class="text-danger text-xs mt-2">Primeiro, concorde com os Termos e Condições e tente registrar-se novamente.</p>
+                  @enderror 
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Cadastrar</button>

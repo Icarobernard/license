@@ -1,1 +1,10 @@
 
+.domain-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .domain-link:hover {
+    color: #3490dc; /* Altere esta cor para a desejada durante o hover */
+    text-decoration: underline;
+  }

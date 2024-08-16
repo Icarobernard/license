@@ -20,16 +20,16 @@ class InfoUserController extends Controller
     public function update(Request $request)
     {
         $user = Auth::user();
-    
+
         $attributes = $request->validate([
             'name' => ['required', 'max:50'],
             'email' => ['required', 'email'],
             'current_password' => ['nullable', 'required_with:new_password', 'current_password'],
             'new_password' => ['nullable', 'required_with:current_password', 'string', 'min:8', 'confirmed'],
         ]);
-    
-       
-       $test= $user->update([
+
+
+        $user->update([
             'name' => $attributes['name'],
             'email' => $attributes['email'],
             // 'phone' => $attributes['phone'],
@@ -39,8 +39,7 @@ class InfoUserController extends Controller
         if ($request->filled('new_password')) {
             $user->update(['password' => Hash::make($request->new_password)]);
         }
-    
-        return redirect('/user-profile')->with('success', 'Perfil atualizado com sucesso!');
+
+        return redirect('/perfil')->with('success', 'Perfil atualizado com sucesso!');
     }
-    
 }

@@ -364,6 +364,15 @@
                 0 => 'v11.14.0',
             ),
         ),
+        'jeremykendall/php-domain-parser' => array(
+            'pretty_version' => '6.0.0',
+            'version' => '6.0.0.0',
+            'reference' => 'ef61cc3b8ea38a8e14a7ef400386240e6370afc8',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jeremykendall/php-domain-parser',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -380,9 +389,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '8edcba98e7d36fb18728e6f05beaefbb72cb0b6a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

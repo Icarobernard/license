@@ -22,13 +22,11 @@ class RegisterController extends Controller
             'password' => ['required', 'min:5', 'max:20'],
             'agreement' => ['accepted']
         ]);
-        $attributes['password'] = bcrypt($attributes['password'] );
-
-        
-
-        session()->flash('success', 'Your account has been created.');
+        $attributes['password'] = bcrypt($attributes['password']);
+        $attributes['is_admin'] = false;
+        session()->flash('success', 'Sua conta foi criada.');
         $user = User::create($attributes);
-        Auth::login($user); 
+        Auth::login($user);
         return redirect('/dashboard');
     }
 }

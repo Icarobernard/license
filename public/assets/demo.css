@@ -37,4 +37,12 @@
 .ct-example .skew-separator.skew-top:after {
   display: none!important;
 }
+.domain-link {
+  color: blue;
+  text-decoration: none;
+}
 
+.domain-link:hover {
+  color: #3490dc; /* Altere esta cor para a desejada durante o hover */
+  text-decoration: underline;
+}

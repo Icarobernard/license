@@ -5,19 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Offer extends Model
+class Content extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'product_id',
-        'name',
-        'type',
-        'licenses',
+        'title',
+        'description',
+        'status',
+        'image',
+        'video_url',
+        'content_type',
+        'custom_content',
+        'rank',
     ];
-
-    public function product()
-    {
-        return $this->belongsTo(Product::class);
-    }
 }

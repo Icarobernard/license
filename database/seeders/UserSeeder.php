@@ -15,13 +15,50 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'id' => 1,
-            'name' => 'admin',
-            'email' => 'admin@softui.com',
-            'password' => Hash::make('secret'),
-            'created_at' => now(),
-            'updated_at' => now()
-        ]);
+        DB::table('users')->insert(
+            [
+                'id' => 1,
+                'name' => 'Thiago Tedeschi',
+                'email' => 'thiagotedeschi@hotmail.com',
+                'password' => Hash::make('123456789'),
+                'is_admin' => true,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+        );
+
+        DB::table('users')->insert(
+            [
+                'id' => 2,
+                'name' => 'Carlos Lourenço',
+                'email' => 'carloslourenco.suporte@gmail.com',
+                'password' => Hash::make('123456789'),
+                'is_admin' => true,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+        );
+        DB::table('users')->insert(
+            [
+                'id' => 3,
+                'name' => 'Fábio Vasconcelos',
+                'email' => 'eu.fabiovasconcelos@gmail.com',
+                'password' => Hash::make('123456789'),
+                'is_admin' => true,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+        );
+        DB::table('users')->insert(
+            [
+                'id' => 4,
+                'name' => 'Icaro Bernard',
+                'email' => 'icarobernar@hotmail.com',
+                'password' => Hash::make('123456789'),
+                'is_admin' => true,
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
+        );
     }
 }
